@@ -3,219 +3,231 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1020" />
-    <title>吴延俊 | 数据开发工程师</title>
+    <meta name="theme-color" content="#f4f5f1" />
     <meta
       name="description"
-      content="吴延俊，杭州数据开发工程师。关注数仓建模、阿里云数据栈、任务调度、查询性能与实时数据链路。"
+      content="吴延俊，杭州数据开发工程师。独立承担团队数据开发工作，覆盖离线数仓、指标口径、任务调度、MaxCompute 数据处理、Hologres 查询与部分实时数据链路。"
     />
+    <title>吴延俊 | 数据开发工程师</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">
-        <span class="brand-mark">WY</span>
-        <span class="brand-name">吴延俊</span>
+      <a class="brand" href="#top" aria-label="返回首页顶部">
+        <span class="brand-mark" aria-hidden="true">NW</span>
+        <span>吴延俊</span>
       </a>
-      <nav class="nav" aria-label="主导航">
-        <a href="#about">关于</a>
-        <a href="#capabilities">能力</a>
-        <a href="#work">工作</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-label">导航</span>
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="主导航">
+        <a href="#profile">能力</a>
+        <a href="#work">实践</a>
+        <a href="#market">岗位匹配</a>
         <a href="#contact">联系</a>
       </nav>
     </header>
 
     <main id="main">
-      <section id="top" class="hero section">
-        <div class="hero-copy">
-          <p class="status"><span aria-hidden="true"></span> 杭州 · 数据开发工程师</p>
-          <h1>把复杂的数据链路，做成能被长期使用的系统。</h1>
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Data Development · Hangzhou</p>
+          <h1 id="hero-title">把复杂的数据链路，做成能被长期使用的系统。</h1>
           <p class="hero-intro">
             我是吴延俊，目前独立承担团队的数据开发工作，主要使用阿里云数据栈建设离线数仓、调度链路和查询服务，也参与部分实时数据链路开发。
           </p>
-          <p class="hero-note">
-            我不想把这里写成一份堆满关键词的在线简历。它会逐步沉淀真实项目、技术复盘，以及我对数据工程的理解。
-          </p>
           <div class="hero-actions">
-            <a class="button primary" href="#work">了解我的工作</a>
-            <a class="button secondary" href="mailto:2543775850@qq.com">邮件联系</a>
+            <a class="button button-primary" href="#work">查看实践范围</a>
+            <a class="button button-secondary" href="mailto:2543775850@qq.com">邮件联系</a>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="数据工作流程示意">
+        <div class="pipeline-panel reveal" aria-label="当前工作范围示意">
           <div class="panel-head">
-            <span>DATA_PIPELINE</span>
-            <span class="panel-state">RUNNING</span>
+            <span>WORKING SCOPE</span>
+            <span class="status"><i aria-hidden="true"></i>已确认</span>
           </div>
-          <ol class="pipeline">
-            <li>
-              <span class="pipeline-index">01</span>
-              <div>
-                <strong>理解业务</strong>
-                <p>业务过程、指标口径、使用场景</p>
-              </div>
-            </li>
-            <li>
-              <span class="pipeline-index">02</span>
-              <div>
-                <strong>组织数据</strong>
-                <p>分层建模、加工逻辑、调度依赖</p>
-              </div>
-            </li>
-            <li>
-              <span class="pipeline-index">03</span>
-              <div>
-                <strong>稳定交付</strong>
-                <p>质量校验、查询服务、问题定位</p>
-              </div>
-            </li>
-          </ol>
-          <div class="panel-foot">
-            <span>MaxCompute</span>
-            <span>DataWorks</span>
-            <span>Hologres</span>
-            <span>Flink</span>
-          </div>
-        </aside>
-      </section>
-
-      <section id="about" class="section split-section">
-        <div class="section-label">
-          <span>01</span>
-          <p>ABOUT</p>
-        </div>
-        <div class="section-content about-content">
-          <p class="lead">
-            比起单纯完成一段 SQL，我更关心数据从哪里来、为什么这样定义，以及它能否稳定地服务后续决策。
-          </p>
-          <div class="about-grid">
-            <p>
-              当前的工作覆盖离线数仓建设、指标口径梳理、DataWorks 任务调度、MaxCompute 数据处理、Hologres 查询优化，以及部分实时链路开发。
-            </p>
-            <p>
-              独立负责数据工作的经历，让我习惯从需求、模型、开发到交付完整地看问题，也让我更重视可维护性、排查效率和实际使用价值。
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="capabilities" class="section split-section">
-        <div class="section-label">
-          <span>02</span>
-          <p>CAPABILITIES</p>
-        </div>
-        <div class="section-content">
-          <div class="section-heading">
-            <h2>我正在持续打磨的能力</h2>
-            <p>工具会变化，真正重要的是把业务问题转成可靠的数据系统。</p>
-          </div>
-          <div class="capability-grid">
-            <article class="capability-card">
-              <span class="card-number">01</span>
-              <h3>数仓建模</h3>
-              <p>围绕业务过程组织主题和分层，让数据口径清楚、加工链路可追溯。</p>
-              <div class="tags"><span>维度建模</span><span>指标体系</span><span>MaxCompute</span></div>
-            </article>
-            <article class="capability-card">
-              <span class="card-number">02</span>
-              <h3>调度与稳定性</h3>
-              <p>管理任务依赖、产出周期和异常排查，减少链路中的隐性风险。</p>
-              <div class="tags"><span>DataWorks</span><span>Shell</span><span>数据质量</span></div>
-            </article>
-            <article class="capability-card">
-              <span class="card-number">03</span>
-              <h3>查询与服务</h3>
-              <p>结合使用场景分析查询路径，让数据结果更快、更稳定地抵达下游。</p>
-              <div class="tags"><span>Hologres</span><span>SQL 优化</span><span>数据服务</span></div>
-            </article>
-            <article class="capability-card">
-              <span class="card-number">04</span>
-              <h3>实时数据</h3>
-              <p>参与实时任务和链路开发，持续补足延迟、状态与故障处理能力。</p>
-              <div class="tags"><span>Flink</span><span>Java</span><span>实时指标</span></div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="work" class="section split-section">
-        <div class="section-label">
-          <span>03</span>
-          <p>WORK</p>
-        </div>
-        <div class="section-content">
-          <div class="section-heading work-heading">
-            <div>
-              <h2>工作经验与案例方向</h2>
-              <p>先保持诚实，再逐步补充经过脱敏的背景、决策过程和实际结果。</p>
+          <div class="pipeline-flow">
+            <div class="pipeline-node">
+              <span>01</span>
+              <strong>业务数据</strong>
+              <small>口径梳理</small>
             </div>
-            <span class="draft-badge">案例整理中</span>
+            <div class="pipeline-connector" aria-hidden="true"></div>
+            <div class="pipeline-node featured">
+              <span>02</span>
+              <strong>数仓加工</strong>
+              <small>MaxCompute · DataWorks</small>
+            </div>
+            <div class="pipeline-connector" aria-hidden="true"></div>
+            <div class="pipeline-node">
+              <span>03</span>
+              <strong>数据服务</strong>
+              <small>Hologres · 实时链路</small>
+            </div>
           </div>
-
-          <div class="work-list">
-            <article class="work-item">
-              <div class="work-title">
-                <span>DATA WAREHOUSE</span>
-                <h3>离线数仓建设与迭代</h3>
-              </div>
-              <p>从业务需求和数据源出发，完成分层设计、数据加工、周期调度与下游交付。</p>
-              <div class="work-stack">MaxCompute / DataWorks / Hive</div>
-            </article>
-            <article class="work-item">
-              <div class="work-title">
-                <span>METRICS &amp; SCHEDULING</span>
-                <h3>指标口径与任务链路</h3>
-              </div>
-              <p>梳理指标定义和依赖关系，处理日常调度、产出异常与数据问题定位。</p>
-              <div class="work-stack">指标体系 / 调度依赖 / SQL</div>
-            </article>
-            <article class="work-item">
-              <div class="work-title">
-                <span>QUERY &amp; REAL-TIME</span>
-                <h3>查询优化与实时链路</h3>
-              </div>
-              <p>围绕实际使用场景优化查询，并参与部分实时任务与数据链路开发。</p>
-              <div class="work-stack">Hologres / Flink / Java</div>
-            </article>
-          </div>
+          <p class="panel-note">关注稳定产出、清晰口径与可维护性。</p>
         </div>
       </section>
 
-      <section class="section split-section notes-section">
-        <div class="section-label">
-          <span>04</span>
-          <p>NOW</p>
+      <section id="profile" class="section profile-section" aria-labelledby="profile-title">
+        <div class="section-title reveal">
+          <p class="eyebrow">Confirmed profile</p>
+          <h2 id="profile-title">不是工具清单，是我正在承担的工作。</h2>
         </div>
-        <div class="section-content now-grid">
-          <div>
-            <p class="mini-label">CURRENT FOCUS</p>
-            <h2>把经验写具体，把能力做扎实。</h2>
-          </div>
-          <div class="now-list">
-            <p><span>01</span> 整理真实项目案例，补充问题、选择与结果</p>
-            <p><span>02</span> 深化数仓建模、实时数据与数据治理能力</p>
-            <p><span>03</span> 记录工作中可复用的排查方法和工程经验</p>
-          </div>
+        <div class="scope-list">
+          <article class="scope-item reveal">
+            <span class="scope-index">01</span>
+            <div>
+              <h3>离线数仓与指标口径</h3>
+              <p>参与离线数仓建设与指标口径梳理，让业务逻辑进入可持续维护的数据链路。</p>
+            </div>
+            <p class="scope-keywords">数据仓库 · 数据建模 · SQL</p>
+          </article>
+          <article class="scope-item reveal">
+            <span class="scope-index">02</span>
+            <div>
+              <h3>任务开发与调度</h3>
+              <p>使用 DataWorks 与 MaxCompute/ODPS 处理数据任务、依赖关系和日常开发。</p>
+            </div>
+            <p class="scope-keywords">ETL · 调度 · 离线</p>
+          </article>
+          <article class="scope-item reveal">
+            <span class="scope-index">03</span>
+            <div>
+              <h3>查询与实时链路</h3>
+              <p>处理 Hologres 查询相关工作，并参与部分 Flink 实时数据链路开发。</p>
+            </div>
+            <p class="scope-keywords">Hologres · Flink · 实时</p>
+          </article>
         </div>
       </section>
 
-      <section id="contact" class="contact-section section">
-        <p class="mini-label">CONTACT</p>
-        <h2>关于数据开发、工作机会，或者一次具体的技术交流。</h2>
-        <p>欢迎通过邮件联系我。我目前关注杭州及远程的数据开发、数仓开发和数据平台相关机会。</p>
-        <div class="contact-actions">
-          <a class="button light" href="mailto:2543775850@qq.com">2543775850@qq.com</a>
-          <a class="text-link" href="https://github.com/NowwaWu" target="_blank" rel="noreferrer">GitHub <span>&nearr;</span></a>
-          <a class="text-link" href="https://www.zhihu.com/people/Nowwa" target="_blank" rel="noreferrer">知乎 <span>&nearr;</span></a>
+      <section class="section stack-section" aria-labelledby="stack-title">
+        <div class="stack-intro reveal">
+          <p class="eyebrow">Technology</p>
+          <h2 id="stack-title">已确认在工作中使用</h2>
+          <p>掌握程度仍待分级，因此这里只陈列真实使用范围，不做“精通”式描述。</p>
+        </div>
+        <div class="stack-cloud reveal" aria-label="技术关键词">
+          <span class="stack-primary">DataWorks</span>
+          <span class="stack-primary">MaxCompute / ODPS</span>
+          <span>Hologres</span>
+          <span>Flink</span>
+          <span>Hive</span>
+          <span>SQL</span>
+          <span>Java</span>
+          <span>Python</span>
+          <span>Shell</span>
+        </div>
+      </section>
+
+      <section id="work" class="section work-section" aria-labelledby="work-title">
+        <div class="section-title reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">实践证据正在整理，边界先说清楚。</h2>
+          <p>以下是已确认的实践方向。项目背景、个人贡献、规模和结果补齐前，不虚构案例结论。</p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case case-featured reveal">
+            <div class="case-topline">
+              <span>CASE 01</span>
+              <span>材料整理中</span>
+            </div>
+            <h3>离线数仓与指标体系</h3>
+            <p>已确认涉及离线数仓建设与指标口径梳理。待补充业务背景、分层设计、个人负责边界及可公开结果。</p>
+            <dl class="case-facts">
+              <div><dt>已确认</dt><dd>离线数仓、指标口径</dd></div>
+              <div><dt>待确认</dt><dd>规模、难点、结果收益</dd></div>
+            </dl>
+          </article>
+
+          <article class="case reveal">
+            <div class="case-topline">
+              <span>CASE 02</span>
+              <span>材料整理中</span>
+            </div>
+            <h3>DataWorks 调度链路</h3>
+            <p>已确认承担任务调度相关工作。待补充依赖设计、异常处理、补数机制和实际改进。</p>
+          </article>
+
+          <article class="case reveal">
+            <div class="case-topline">
+              <span>CASE 03</span>
+              <span>材料整理中</span>
+            </div>
+            <h3>Hologres 查询与实时链路</h3>
+            <p>已确认覆盖 Hologres 查询及部分实时链路。待补充问题定位、技术调整与优化前后变化。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="market" class="section market-section" aria-labelledby="market-title">
+        <div class="market-copy reveal">
+          <p class="eyebrow">Market alignment</p>
+          <h2 id="market-title">对齐杭州数据岗位反复强调的能力。</h2>
+          <p>
+            基于 2026 年 6 月 12 日整理的 38 份杭州高薪数据岗位 JD，页面重点呈现与当前经历有交集的能力，不把招聘热词冒充个人经验。
+          </p>
+        </div>
+        <div class="market-matrix reveal">
+          <div class="matrix-head">
+            <span>JD 高频方向</span>
+            <span>当前证据</span>
+          </div>
+          <div class="matrix-row"><strong>数据仓库 / 数仓</strong><span class="match">已有实践</span></div>
+          <div class="matrix-row"><strong>Flink / 实时</strong><span class="partial">部分实践</span></div>
+          <div class="matrix-row"><strong>数据建模 / 指标</strong><span class="match">已有实践</span></div>
+          <div class="matrix-row"><strong>ETL / SQL / 离线</strong><span class="match">已有实践</span></div>
+          <div class="matrix-row"><strong>数据质量 / 稳定性</strong><span class="pending">待案例证明</span></div>
+          <div class="matrix-row"><strong>治理 / 血缘 / 湖仓</strong><span class="pending">未确认</span></div>
+        </div>
+      </section>
+
+      <section class="section opportunity-section" aria-labelledby="opportunity-title">
+        <div class="opportunity-copy reveal">
+          <p class="eyebrow">Next role</p>
+          <h2 id="opportunity-title">下一站，希望把数据链路做得更完整。</h2>
+          <p>
+            关注数仓开发、实时数仓、大数据开发、数据平台开发和阿里云数据开发相关机会。具体优先岗位与业务方向仍待收敛。
+          </p>
+        </div>
+        <div class="opportunity-note reveal">
+          <span>PLACEHOLDER</span>
+          <p>工作年限、经历时间线、学历、目标岗位优先级与可公开简历链接待补充。</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">聊聊数据开发，也聊聊下一份工作。</h2>
+        </div>
+        <div class="contact-links reveal">
+          <a href="mailto:2543775850@qq.com">
+            <span>EMAIL</span>
+            <strong>2543775850@qq.com</strong>
+          </a>
+          <a href="https://github.com/NowwaWu" target="_blank" rel="noreferrer">
+            <span>GITHUB</span>
+            <strong>@NowwaWu</strong>
+          </a>
+          <a href="https://www.zhihu.com/people/Nowwa" target="_blank" rel="noreferrer">
+            <span>ZHIHU</span>
+            <strong>@Nowwa</strong>
+          </a>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
       <p>© 2026 吴延俊</p>
-      <a href="#top">回到顶部 &uarr;</a>
+      <p>Static site for GitHub Pages</p>
     </footer>
   </body>
 </html>
